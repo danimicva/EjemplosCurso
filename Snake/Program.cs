@@ -45,7 +45,8 @@ namespace Snake
                 if(nuevoPunto == ResultadoMovimiento.Manzana)
                     manzana = new Point(rand.Next(0, TAMANO_MAPA - 1), rand.Next(0, TAMANO_MAPA - 1));
 
-                //limpiarPantalla();
+                // Console.Clear();
+                Console.WriteLine("Usa las flechas para moverte!")
                 pintarPantalla(serpiente, manzana);
                 Console.WriteLine("Tamaño: " + serpiente.Count);
 
@@ -110,12 +111,6 @@ namespace Snake
             }
 
             return ret;
-        }
-
-
-        private static void limpiarPantalla()
-        {
-            Console.Clear();
         }
 
         private static string imprimeCaracterRepetido(char caracter, int nVeces)
