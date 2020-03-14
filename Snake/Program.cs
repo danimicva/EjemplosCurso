@@ -11,7 +11,7 @@ namespace Snake
         
         
 
-        private const int TamañoMapa = 4;
+        private const int TamañoMapa = 6;
         private static Random Aleatorio = new Random();
 
         static void Main(string[] args)
